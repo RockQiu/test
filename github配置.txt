@@ -1,0 +1,61 @@
+
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest
+$ git init
+Initialized empty Git repository in D:/GitTest/.git/
+
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
+$ git config --global user.name "RockQiu
+> ^C
+
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
+$  git config --global user.name "RockQiu
+> ^C
+
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
+$  git config --global user.name "RockQiu"
+
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
+$ git config --global user.email "qtz214@163.com"
+
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
+$ ssh-keygen -t rsa -C "qtz214@163.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Rock/.ssh/id_rsa):
+Created directory '/c/Users/Rock/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Rock/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Rock/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:hL3dFvuCBOtPSv2q56vkAHUbmx09LYez2nZvQTPf2Kc qtz214@163.com
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|       o   . o   |
+|      o * . B o  |
+|     . o @ o O + |
+|    .   S + = .o=|
+|     . . o = ...=|
+|      . + = + o.o|
+|       = +.o oE..|
+|        ===o.  ..|
++----[SHA256]-----+
+
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
+$ git remote add origin https://github.com/RockQiu/test.git
+
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
+$ git pull --rebase origin master
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/RockQiu/test
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
+$ ^C
+
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
+$
