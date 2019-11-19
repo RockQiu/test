@@ -1,22 +1,18 @@
+github
+用户名：RockQiu
+密码：Qiu1983.2.14
 
+//初始化
 Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest
 $ git init
 Initialized empty Git repository in D:/GitTest/.git/
-
+//配置用户
 Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
-$ git config --global user.name "RockQiu
-> ^C
-
-Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
-$  git config --global user.name "RockQiu
-> ^C
-
-Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
-$  git config --global user.name "RockQiu"
-
+$ git config --global user.name "RockQiu"
+//配置邮件地址
 Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
 $ git config --global user.email "qtz214@163.com"
-
+//配置ssh-keygen,即密钥找到它，到github中Setting中注册密钥
 Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
 $ ssh-keygen -t rsa -C "qtz214@163.com"
 Generating public/private rsa key pair.
@@ -40,10 +36,10 @@ The key's randomart image is:
 |       = +.o oE..|
 |        ===o.  ..|
 +----[SHA256]-----+
-
+//初始化连接master项目地址
 Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
 $ git remote add origin https://github.com/RockQiu/test.git
-
+//下载项目
 Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
 $ git pull --rebase origin master
 remote: Enumerating objects: 3, done.
@@ -53,9 +49,20 @@ Unpacking objects: 100% (3/3), done.
 From https://github.com/RockQiu/test
  * branch            master     -> FETCH_HEAD
  * [new branch]      master     -> origin/master
-
+//增加该项目下所有文件，如果只是单个只能需文件名如main.js
 Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
-$ ^C
-
+$ git add .
+warning: LF will be replaced by CRLF in main.min.css.
+The file will have its original line endings in your working directory.
+//给文件增加注释
 Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
-$
+$ git commit -m "创建main.min.js,修改了ReadMe文件"
+[master 363b0d5] 创建main.min.js,修改了ReadMe文件
+warning: LF will be replaced by CRLF in main.min.css.
+The file will have its original line endings in your working directory.
+ 2 files changed, 63 insertions(+)
+ create mode 100644 "github\351\205\215\347\275\256.txt"
+ create mode 100644 main.min.css
+//下载
+Rock@LAPTOP-BV0JU3FP MINGW64 /d/GitTest (master)
+$git pull origin master
